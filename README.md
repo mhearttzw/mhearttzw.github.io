@@ -1,2 +1,2 @@
 # mhearttzw.github.io
-Static blog using hexo
+Static blog using hexo.
