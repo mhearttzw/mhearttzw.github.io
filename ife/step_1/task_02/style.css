@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #dce;
+}
+
+header {
+	height: 60px;
+	background: #323;
+}
+.logo {
+	width: 62px;
+	padding-left: 25px; 
+	padding-top: 2px;
+}
+.logo img {
+	height: 56px;
+	
+	border-radius: 5px;
+}
+nav ul {
+	position: absolute;
+	right: 15px;
+	top: 0;
+}
+nav li {
+	display: block;
+	float: left;
+	padding: 20 10;
+	width: 60px;
+}
+nav li a {
+	font-size: 15px;
+	color: #aaa;
+	text-decoration: none;
+}
+nav li:hover {
+	pointer: ;
+	background: #474747;
+	border-bottom: 1px solid red;
+	border-radius: 5px;
+}
+
+/**-----------------------main内容------------------------**/
+main {
+	padding: 10px 0;
+}
+article {
+	margin: 10px 20px;
+	padding: 15px 10px;
+}
+h1{
+	font-size: 28px;
+}
+h2{
+	font-size: 16px;
+	color: #bcbcbc;
+	padding: 5px 0;
+}
+.author .aTime{
+	font-size: 8px;
+	color: #bcbcbc;
+	line-height: 10px;
+}
+p {
+	font-size: 14px;
+	color: #bebebe;
+	text-indent: 2em;
+}
+.conImg {
+	padding: 8px 0;
+	width: 100px;
+	height: 110px;
+}
