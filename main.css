@@ -1,0 +1,42 @@
+html,body,dl,dt,dd {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #f3f5f6;
+}
+.menu {
+	background: #f3f5f6 none repeat scroll 0 0;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 2px #e9ebec;
+    margin: 50px auto;
+    padding: 10px;
+    width: 300px;
+}
+.menuTitle {
+	background: #128fdc none repeat scroll 0 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.menuTtile:hover {
+	cursor: pointer;
+}
+.menuCon a {
+	margin: 1px 0;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	color: #7f96a3;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+}
+.menuCon a:hover { 
+	background: #cdccdd none repeat scroll 0 0;
+    border-radius: 5px;
+}
+
