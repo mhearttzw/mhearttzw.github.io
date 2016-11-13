@@ -1,0 +1,369 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #6E6666;
+	font-family: "Microsoft YaHei";
+}
+
+.container {
+	width: 980px;
+	height: 1386px;
+	margin: 0 auto;
+	padding: 0 44px;
+	background: #FBFBFB;
+	box-sizing: border-box;
+}
+header {
+	height: 61px;
+	margin-bottom: 30px;
+	border-bottom: 2px solid #938e8c;
+	position: relative;
+}
+.logo {
+	width: 150px;
+	height: 61px;
+	background: #EC6464;
+	position: relative;
+}
+.logo p{
+	position: absolute;
+	left: 5px;
+	bottom: 3px; 
+	font-size: 12px;
+	color: #fff;
+	font-family: ;
+}
+.date {
+	font-size: 12px;
+	color: #d45d5c;
+	position: absolute;
+	right: 0;
+	bottom: 3px;
+}
+
+/*-----------------main style-----------------------*/
+.one {
+	height: 301px;
+	position: relative;
+}
+.one .left {
+	display: inline-block;
+	width: 641px;
+	position: relative;
+	margin-right: 
+}
+img {
+	width: 641px;
+	height: 301px;
+}
+.one>.left>.mask {
+	height: 301px;
+	width: 191px;
+	position: absolute;
+	top: 0;
+	background: #67A967;
+	opacity: 0.3;
+}
+.one .left .mask_l {
+	left: 0;
+	background: #67A967;
+}
+.one .left .mask_r {
+	right: 0;
+	background: #AD4C4C;
+}
+.one .right {
+	width: 203px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.one .right hr{
+	border: 2px solid #cc8091;
+}
+.one h2{
+	text-decoration: underline;
+	color: #000;
+}
+.one .tips_1 {
+    color: #676767;
+    font-family: KaiTi;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 10px;
+    margin-top: 5px;
+}
+.one .num_1 {
+	color: #75b86b;
+    font-size: 116px;
+    font-style: italic;
+    margin-left: -12px;
+}
+.tips_2 {
+	position: relative;
+}
+.tips_2 .num_2 {
+	color: #cc8091;
+    display: inline-block;
+    font-size: 55px;
+    position: absolute;
+    top: -8px;
+}
+.tips_2 .mark_1 {
+	color: #cc8091;
+    font-size: 21px;
+    position: absolute;
+    right: 80px;
+    top: 12px;
+}
+.tips_2 .mark_2 {
+	color: #cc8091;
+    font-size: 12px;
+    position: absolute;
+    right: 30px;
+    top: 38px;
+}
+
+.two {
+	margin: 25px 0;
+}
+.con_1,.con_2,.con_3 {
+	display: inline-block;
+	margin-right: 20px;
+	vertical-align: top;
+}
+.con_1 {
+	width: 220px;
+}
+.con_1 h3 {
+	font-size: 16px;
+	color: #418c59;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.con_1 p, .con_2 p, .con_3 p {
+	font-size: 12px;
+	line-height: 16px;
+	opacity: 0.7;
+	color: #281315;
+}
+.con_2 {
+	width: 200px;
+}
+.con_2 h3 {
+	font-size: 16px;
+	color: #d2994f;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.con_3 {
+	width: 160px;
+}
+.con_3 h3 {
+	font-size: 16px;
+	text-decoration: underline;
+	font-weight: bold;
+	color: #cc7680;
+}
+.con_3 p{
+	line-height: 1.5em;
+}
+.w_3 {
+	margin-top: 38px;
+}
+.w_3 p{
+	font-size: 12px;
+	color: #cd4a48;
+	font-style: italic;
+	opacity: 0.7;
+}
+
+.three {
+	padding: 30px 0;
+	border-bottom: : 1px solid #938e8c;
+	width: 892px;
+	border-bottom: 1px solid #938e8c
+}
+.three .left, .three .left {
+	display: inline-block;
+}
+.three .left {
+	width: 400px;
+}
+.three .left .title{
+	border-bottom: 1px solid #11456b;
+	margin-bottom: 25px;
+}
+.three h3{
+	color: #11456b;
+    font-family: "SimHei";
+    font-size: 42px;
+    font-weight: bold;
+    height: 45px;
+    line-height: 16px;
+}
+.three .left h3 span{
+	font-size: 72px;
+	color: #f5e327;
+	font-style: italic;
+}
+
+.three .title .line_3 {
+    font-size: 32px;
+    margin-bottom: -5px;
+}
+.three .left .con span {
+
+	float: left;
+	padding: 20px 14px 20px 0;
+	font-size: 70px;
+	color: #f5e327;
+}
+.three .left .con p {
+	font-size: 12px;
+	color: #767777;
+	font-family: "SimSun";
+	line-height: 16px;
+}
+.three .left img {
+	float: right;
+	right: 0;
+	top: 100px;
+	margin: 15px 0 15px 15px;
+	width: 165px;
+	height: 260px;
+}
+.three .right {
+	width: 458px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 28px;
+}
+.three .right .img {
+	position: relative;
+}
+.three .right img {
+	width: 458px;
+	height: 275px;
+}
+.three .img .mask_3 {
+	position: absolute;
+	left: 0;
+	bottom: 5px;
+	width: 458px;
+	height: 61px;
+	opacity: 0.3;
+	background: #645E5E;
+}
+.mask_3_line1{
+	display: inline-block;
+	color: #fff;
+	margin-top: 8px;
+	margin-left: 38px;
+	border-left: 3px solid #72b16a;
+	padding-left: 10px;
+	height: 45px;
+	line-height: 45px;
+}
+.mask_3_line2 {
+	margin-left: 5px;
+	display: inline-block;
+	font-size: 12px;
+	font-style: italic;
+	letter-spacing: 140%;
+	color: #72b16a;
+}
+.three .right .con {
+	width: 459px;
+	height: 318px;
+	margin-top: 15px;
+	background: #F6D5D5;
+	position: relative;
+}
+.three .right .con p {
+    color: #5a5a5b;
+    font-family: "SumSun";
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 20px;
+    text-align: left;
+}
+.three .right .conTop {
+	padding: 20px 8px;
+}
+.three .right .conTop .triangle {
+    border-bottom: 10px solid #10456b;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    display: inline-block;
+    margin-right: 8px;
+}
+.three .right .con>p {
+	margin: 8px 5px 8px 10px;
+}
+
+.three .right .conTop P {
+    padding-bottom: 10px;
+}
+.three .con_bottom .left {
+    background: #c54d4d none repeat scroll 0 0;
+    bottom: 0;
+    box-sizing: border-box;
+    color: #fff;
+    height: 160px;
+    left: 0;
+    padding: 25px 10px;
+    position: absolute;
+    width: 260px;
+}
+
+.three .con_bottom .left .zero {
+    border-right: 2px solid #fff;
+    color: #fff;
+    display: inline-block;
+    font-size: 110px;
+    height: 110px;
+    line-height: 110px;
+     vertical-align: top;
+}
+.three .con_bottom .left .tips {
+	display: inline-block;
+	width: 150px;
+}
+.three .right .con_bottom p {
+    color: #fff;
+}
+.three .right .con_bottom .line_1,.three .right .con_bottom .line_2 {
+	font-style: italic;
+}
+.three .right .con_bottom .right {
+    bottom: 0;
+    height: 130px;
+    position: absolute;
+    right: 0;
+    width: 180px;
+}
+.three .right .con_bottom .right span {
+    color: #d45d5c;
+    float: left;
+    font-family: "黑体";
+    font-size: 72px;
+}
+.a1 {
+    height: 10px;
+    margin: 18px 18px -18px -58px;
+}
+.three .right .con_bottom .right p {
+    color: #5d5b5b;
+    font-family: "SumHei";
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.three .right .con_bottom .right .a2 {
+    float: right;
+    margin: 13px 10px 18px 18px;
+}

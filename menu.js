@@ -1,7 +1,8 @@
 var menu = [
 	['第一阶段',
 		['ife/step_1/task_01/a.html', '任务一'],
-		['ife/step_1/task_02/a.html', '任务二']
+		['ife/step_1/task_02/a.html', '任务二'],
+		['ife/step_1/task_03/a.html', '任务三']
 	]
 ];
 

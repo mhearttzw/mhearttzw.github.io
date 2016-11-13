@@ -47,7 +47,9 @@ nav li:hover {
 
 /**-----------------------main内容------------------------**/
 main {
-	padding: 20px 0;
+	margin-right: 410px;
+    padding: 20px 0;
+    position: relative;
 }
 article, aside{
 	margin: 25px 30px;
@@ -125,6 +127,12 @@ table tr td {
 }
 
 /*-------------------aside侧栏-----------------*/
+aside {
+    position: absolute;
+    right: 0;
+    top: 80px;
+    width: 350px;
+}
 aside h4 {
 	border-left: 3px solid #ccc;
 	padding-left: 10px;

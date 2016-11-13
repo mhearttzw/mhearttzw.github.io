@@ -1,0 +1,57 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #eee;
+}
+
+
+.main.clearfix {
+    overflow: auto;
+}
+.main {
+    background: #eee none repeat scroll 0 0;
+    border: 2px solid #adadad;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.left {
+    background: #aaa none repeat scroll 0 0;
+    border: 1px solid #128edf;
+    float: left;
+    width: 200px;
+    border-radius: 5px;
+}
+.logo img {
+    border-radius: 5px;
+    display: inline-block;
+    float: left;
+    height: 80px;
+    padding: 20px;
+    width: 80px;
+}
+span {
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.right {
+    background: #aaa none repeat scroll 0 0;
+    border: 1px solid #adadad;
+    border-radius: 5px;
+    float: right;
+    width: 120px;
+}
+.conImg img {
+	padding: 20px;
+	width: 80px;
+	height: 80px;
+}
+
+.middle {
+    background: #aaa none repeat scroll 0 0;
+    margin-left: 240px;
+    margin-right: 160px;
+    padding: 20px;
+    border-radius: 5px;
+}
