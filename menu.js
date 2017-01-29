@@ -7,6 +7,10 @@ var menu = [
 		['ife/step_1/task_05/a.html', '任务五'],
 		['ife/step_1/task_06/a.html', '任务六'],
 		['ife/step_1/task_07/a.html', '任务七']
+	],
+	['第二阶段',
+		['ife/step_2/task_01/a.html', '任务一'],
+		['ife/step_2/task_22/a.html', '任务二十二']
 	]
 ];
 
