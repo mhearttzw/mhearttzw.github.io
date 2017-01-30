@@ -1,0 +1,45 @@
+body {
+
+}
+.root, .items-1, .items-2, .items-3, .items-4 {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: row;
+	justify-content: center;
+	margin: 20px 28px;
+	border: 1px solid #A9A3A3;
+}
+.root {
+	margin: 80px 50px;
+	height: 350px;
+}
+
+.active {
+	background-color: "#E43F3F";
+}
+/*-------------btn------------*/
+.btns{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.btn-items {
+	margin: 30px;
+	width: 110px;
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	color:#C9CCD0;
+	font-size: 28px;
+	letter-spacing: 3px;
+	border-radius: 5px;
+	display: inline-block;
+	background: #4C7AC5;
+	
+}
+.btn-items:hover {
+	cursor: pointer;
+	background: #414C66;
+	color: ;
+}
