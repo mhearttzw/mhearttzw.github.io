@@ -53,9 +53,9 @@ function midOrder(node) {
 //后序遍历
 function postOrder(node) {
 	if(null!==node) {
-		items.push(node);
-		postOrder(node.lastElementChild);
 		postOrder(node.firstElementChild);
+		postOrder(node.lastElementChild);
+		items.push(node);
 	}
 }
 
