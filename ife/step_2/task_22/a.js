@@ -10,13 +10,13 @@ window.onload= function() {
 	preBtn.onclick= function() {
 		reset();
 		preOrder(root);	
-			alert(items.length);
+			//alert(items.length);
 		colorChange();
 	};
 	midBtn.onclick= function() {
 		reset();
 		midOrder(root);
-		alert(items.length);	
+		//alert(items.length);	
 		colorChange();
 	};
 	postBtn.onclick= function() {

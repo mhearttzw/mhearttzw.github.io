@@ -1,13 +1,13 @@
 var btns= document.getElementsByClassName("btn-items"),
 	root= document.getElementsByClassName("root")[0],
+	deleteBtn= document.getElementById("btn-delete"),
+	insertBtn= document.getElementById("btn-insert"),
 	timer= null,
 	NodeLists= [],
 	bfIndex= 0,
-	lock= false;
+	lock= false,
+	selectedDiv;
 
-function preorder() {
-
-}
 
 function traverseDf(node, NodeLists) {
 	if(node) {
@@ -71,12 +71,22 @@ function traverse(btnIndex) {
 				traverseBf(root, NodeLists);
 				//alert(NodeLists);
 				break;
-		case 2: traverseDf(root, NodeLists);
-				var text= document.getElementsByClassName("input")[0].value;
+		case 2: var text= document.getElementsByClassName("input")[0].value;
+				alert(text);
+				if(text=== ""){
+					alert("请输入要选中的节点！");
+					break;
+				}
+				traverseDf(root, NodeLists);
 				break;
-		case 3: traverseBf(root, NodeLists);
+		case 3: var text= document.getElementsByClassName("input")[0].value;
+				alert(text);
+				if(text=== ""){
+					alert("请输入要选中的节点！");
+					break;
+				}
+				traverseBf(root, NodeLists);
 				bfIndex= 0;
-				var text= document.getElementsByClassName("input")[0].value;
 				break;
 
 	}
@@ -91,7 +101,50 @@ function reset(NodeLists) {
 	}
 }
 
+//鼠标点击颜色变换函数	
+function select() {
+	var divs= document.getElementsByTagName("section")[0].getElementsByTagName("div");
+	for(var i=0; i< divs.length; i++) {
+		divs[i].onclick= function(e) {
+			clearInterval(timer);
+			reset(divs);
+			this.style.background= "#4A71E0";
+			e.stopPropagation();
+			selectedDiv= this;
+		}
+	} 
+}
+
+function deleteItem() {
+		if(selectedDiv=== undefined){
+			alert("请选中要操作的节点！");
+		} else {
+			//alert(selectedDiv);
+			var parent= selectedDiv.parentNode;
+			//alert(parent);
+			parent.removeChild(selectedDiv);
+		}
+}
+
+function insertItem() {
+	var text= document.getElementsByClassName("input")[1].value;
+	if(text=== "") {
+		alert("请输入内容！")
+	} else if(selectedDiv=== undefined){
+		alert("请选中要操作的节点！")
+	} else {
+		var newDiv= document.createElement("div");
+			newDiv.className= "items";
+			//alert(text);
+			newDiv.innerHTML= text;
+		selectedDiv.appendChild(newDiv);
+		select();
+	}
+
+}
+
 function init() {
+	select();
 	for(var i=0; i<btns.length; i++) {
 		(function(i){
 		btns[i].onclick= function() {
@@ -103,6 +156,8 @@ function init() {
 			}
 		}(i));
 	}
+	deleteBtn.onclick= function() {deleteItem()};
+	insertBtn.onclick= function() {insertItem()};
 }
 
 init();
