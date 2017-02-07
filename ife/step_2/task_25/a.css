@@ -1,0 +1,113 @@
+body {
+	 background-color: #f3f5f6;
+}
+
+
+.container {
+	margin: 0 auto;
+	width: 600px;
+}
+
+fieldset {
+	box-shadow: 0 0 3px 3px #e9ebec;
+	border: none;
+	border-radius: 5px;
+}
+
+
+/*-------------btns------------*/
+.btns{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.btn-items {
+	border: 0;
+	margin: 15px;
+	width: 90px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	color:#FCFCFD;
+	font-size: 18px;
+	letter-spacing: 2px;
+	border-radius: 5px;
+	display: inline-block;
+	background: #4C7AC5;
+	
+}
+.btn-items:hover {
+	cursor: pointer;
+	background: #414C66;
+	color: ;
+}
+
+
+/*----------------- ------------*/
+
+#result {
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	font-family: Microsoft YaHei UI;
+	font-size: 18px;
+}
+
+/*----------------- ------------*/
+.item-visible {
+	margin: 8px 18px;
+
+}
+.item-hidden {
+	display: none
+}
+
+
+
+/*-----------------------node节点-------------------------*/
+.arrow {
+	display: inline-block;
+	margin-right: 6px;
+}
+.arrow:hover, .addIcon:hover, .deleteIcon:hover {
+	cursor: pointer;
+}
+.empty-arrow {
+	border-left: 10px solid transparent;
+}
+.down-arrow {
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #70A4E4;
+}
+.right-arrow {
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 10px solid #70A4E4;
+}
+.node-title {
+	color: #4C7ABD;
+	font-family: Microsoft YaHei UI;
+}
+.highLight {
+	color: #F06666;
+}
+.node-title:hover {
+	color: #356482;
+	cursor: pointer;
+}
+.addIcon {
+	display: none;
+	vertical-align: top;
+}
+.deleteIcon {
+	display: none;
+	vertical-align: top;
+}
+.node:hover {
+	cursor: default;
+}
+.node:hover>.addIcon, .node:hover>.deleteIcon {
+	display: inline-block;
+}
