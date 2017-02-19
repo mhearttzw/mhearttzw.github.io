@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="jquery-1.12.1.min.js"></script>
+	<title>Echelon</title>
+	<link rel="stylesheet" href="a.css">
+</head>
+<body>
+	<div class="container">
+		<div class="gamePad">
+			<canvas id="background" height="610px" width="750"></canvas>
+			<canvas id="front" height="610px" width="750"></canvas>
+			<form>
+				<fieldset>
+					<legend>动力选择</legend>
+					<input type="radio" name="speed" value="前进号">前进号
+					<input type="radio" name="speed" value="奔腾号">奔腾号
+					<input type="radio" name="speed" value="超越号">超越号
+				</fieldset>
+				<fieldset>
+					<legend>充能选择</legend>
+					<input type="radio" name="chrg" value="劲量型">劲量型
+					<input type="radio" name="chrg" value="光能型">光能型
+					<input type="radio" name="chrg" value="永久型">永久型
+				</fieldset>
+				<div class="newBtn">
+					<span class="btn" id="createBtn" name="launch">创建新飞船</span>
+				</div>	
+				<fieldset>
+					<legend>控制台</legend>
+					<ul class="wrapper-ul">
+						<li class="wrapper">
+							<span class="name">1号飞船</span>
+							<input type="button" class="btn" name="fly" value="fly">
+							<input type="button" class="btn" name="stop" value="stop">
+							<input type="button" class="btn" name="destroy" value="destroy">
+						</li>
+					</ul>
+				</fieldset>	
+			</form>
+		</div>
+		<div class="console" id="console">
+			<h1 class="title">Console Log</h1>
+			<ul></ul>
+		</div>
+	</div>
+	<script src="a.js"></script>
+</body>
+</html>

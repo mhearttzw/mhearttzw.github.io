@@ -13,7 +13,8 @@ var menu = [
 		['ife/step_2/task_22/a.html', '任务二十二'],
 		['ife/step_2/task_23/a.html', '任务二十三'],
 		['ife/step_2/task_24/a.html', '任务二十四'],
-		['ife/step_2/task_25/a.html', '任务二十五']
+		['ife/step_2/task_25/a.html', '任务二十五'],
+		['ife/step_2/task_26/a.html', '任务二十六']
 	]
 ];
 

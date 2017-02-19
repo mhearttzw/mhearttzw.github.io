@@ -1,0 +1,54 @@
+body{
+	font-family: Microsoft YaHei UI;
+	background-color: #f3f5f6;
+}
+
+/*======================================*/
+.container {
+	margin: 0 auto;
+	width: 1100px;
+	height: 950px;
+	border: 1px solid #111;
+}
+.gamePad {
+	float: left;
+	width: 750px;
+	position: relative;
+	
+}
+#background {
+	background: #cecece;
+	z-index: 1;
+	top: 0;
+}
+#front {
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 10;
+}
+.console {
+	height: 950px;
+	overflow: scroll;
+	text-align: center;
+}
+.wrapper {
+	list-style: none;
+	font-size: 16px;
+	margin: 5px;
+}
+.btn {
+	border-radius: 2px;
+	font-size: 16px;
+	color: #999;
+	margin: 2px 6px;
+	box-shadow: none;
+}
+.btn:hover {
+	color: #111;
+}
+
+ul>li{
+	font-size: 15px;
+	list-style: none;
+}

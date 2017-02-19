@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="jquery-1.12.1.min.js"></script>
+	<title>Echelon</title>
+	<link rel="stylesheet" href="a.css">
+</head>
+<body>
+	<div class="container">
+		<div class="gamePad">
+			<canvas id="background" height="720px" width="750"></canvas>
+			<canvas id="front" height="720" width="750"></canvas>
+			<form>
+				<fieldset>
+					<legend>控制台</legend>
+					<ul>
+						<li class="wrapper">
+							<span class="name">Spaceship NO.1</span>
+							<input type="button" class="btn" name="launch" value="launch">
+							<input type="button" class="btn" name="fly" value="fly">
+							<input type="button" class="btn" name="stop" value="stop">
+							<input type="button" class="btn" name="destroy" value="destroy">
+						</li>
+						<li class="wrapper">
+							<span class="name">Spaceship NO.2</span>
+							<input type="button" class="btn" name="launch" value="launch">
+							<input type="button" class="btn" name="fly" value="fly">
+							<input type="button" class="btn" name="stop" value="stop" >
+							<input type="button" class="btn" name="destroy" value="destroy">
+						</li>
+						<li class="wrapper">
+							<span class="name">Spaceship NO.3</span>
+							<input type="button" class="btn" name="launch" value="launch">
+							<input type="button" class="btn" name="fly" value="fly">
+							<input type="button" class="btn" name="stop" value="stop">
+							<input type="button" class="btn" name="destroy" value="destroy">
+						</li>
+						<li class="wrapper">
+							<span class="name">Spaceship NO.4</span>
+							<input type="button" class="btn" name="launch" value="launch">
+							<input type="button" class="btn" name="fly" value="fly">
+							<input type="button" class="btn" name="stop" value="stop">
+							<input type="button" class="btn" name="destroy" value="destroy">
+						</li>
+					</ul>
+				</fieldset>	
+			</form>
+		</div>
+		<div class="console" id="console">
+			<h1 class="title">Console Log</h1>
+			<ul></ul>
+		</div>
+	</div>
+	<script src="a.js"></script>
+</body>
+</html>
