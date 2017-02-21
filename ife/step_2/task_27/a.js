@@ -194,7 +194,7 @@
 
 			send: function(msg, from, to) {
 				var code= MessageAdapter.compile(msg);
-				alert(code);
+				alert("code "+code);
 				BUS.transmit.apply(this, [code, from, to]);
 			},
 
@@ -251,7 +251,7 @@
 
 	var MessageAdapter= {
 		compile: function(msg) {
-			var idCode= msg.id.toString(2).length> 2? msg.id.toString(2): "0"+msg.id.toString(2);
+			var idCode = msg.id.toString(2).length < 2 ? "0" + msg.id.toString(2) : msg.id.toString(2);
 			var spdCode= null,
 				chrgCode= null,
 				cmdCode= null,
@@ -314,7 +314,7 @@
 				cmdCode= code.substring(2, 4),
 				spdCode= code.substring(4,6),
 				chrgCode= code.substring(6,8);
-			var id= parseInt(idCode, 10),
+			var id= parseInt(idCode, 2),
 				cmd= null,
 				spd= null,
 				chrg= null;
@@ -371,6 +371,7 @@
 		$(".wrapper").delegate(".btn", "click", function() {
 			var $target= $(this);
 			var cmd= $(this).attr("name");
+			//var tempNum;
 			switch(cmd)	{
 				case "launch": 
 						var spaceships= mediator.getSpaceships();
@@ -378,8 +379,9 @@
 							chrg= $("input[type='radio'][name='chrg']:checked").val();
 						//alert(spd);
 						//alert(chrg);
-						for(var i=0; i<4; i++) {
+						for(var i=0;i <spaceships.length; i++) {
 							if(!spaceships[i]) {
+								alert(spaceships.length);
 								ConsoleUtil.addBtns(i);
 								var message= new Message(i, cmd, spd, chrg);
 								commander.send(message);
